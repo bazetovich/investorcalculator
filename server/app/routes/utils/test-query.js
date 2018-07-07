@@ -1,0 +1,51 @@
+const config = require('../../config');
+
+module.exports = {
+    [config.get('names:monthRented')]: '0',
+    [config.get('names:monthRentCost')]: '0',
+
+    [config.get('names:monthTotalIncome')]: '0',
+    [config.get('names:yearTotalIncome')]: '0',
+
+    [config.get('names:vacancyFactor')]: '0',
+    [config.get('names:monthVacancyFactor')]: '0',
+    [config.get('names:yearVacancyFactor')]: '0',
+    [config.get('names:managementFee')]: '0',
+    [config.get('names:monthManagementFee')]: '0',
+    [config.get('names:yearManagementFee')]: '0',
+    [config.get('names:maintenance')]: '0',
+    [config.get('names:monthMaintenance')]: '0',
+    [config.get('names:yearMaintenance')]: '0',
+    [config.get('names:monthUtilities')]: '0',
+    [config.get('names:yearUtilities')]: '0',
+    [config.get('names:hazardInsurance')]: '0',
+    [config.get('names:monthHazardInsurance')]: '0',
+    [config.get('names:yearHazardInsurance')]: '0',
+    [config.get('names:taxes')]: '0',
+    [config.get('names:monthTaxes')]: '0',
+    [config.get('names:yearTaxes')]: '0',
+    [config.get('names:mortgageInsurance')]: '0',
+    [config.get('names:monthMortgageInsurance')]: '0',
+    [config.get('names:yearMortgageInsurance')]: '0',
+
+    [config.get('names:monthTotalExpenses')]: '0',
+    [config.get('names:yearTotalExpenses')]: '0',
+    [config.get('names:monthProfit')]: '0',
+    [config.get('names:yearProfit')]: '0',
+    [config.get('names:monthMortgagePayment')]: '0',
+    [config.get('names:yearMortgagePayment')]: '0',
+    [config.get('names:monthCashFlow')]: '0',
+    [config.get('names:yearCashFlow')]: '0',
+
+    [config.get('names:purchasePrice')]: '0',
+    [config.get('names:repairCost')]: '0',
+    [config.get('names:downPaymentPercent')]: '0',
+    [config.get('names:downPayment')]: '0',
+    [config.get('names:miscClosingCosts')]: '0',
+    [config.get('names:loanAmount')]: '0',
+    [config.get('names:interestRate')]: '0',
+    [config.get('names:term')]: '0',
+    [config.get('names:roi')]: '0',
+    [config.get('names:capRate')]: '0',
+    [config.get('names:dscr')]: '0'
+}

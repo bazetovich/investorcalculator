@@ -1,0 +1,61 @@
+{
+    "port": 4000,
+    "smpt": {
+        "host": "smtp.elasticemail.com",
+        "port": 2525,
+        "username": "i.kurski@yahoo.com",
+        "password": "c613c348-0bd7-48dc-94ac-02fbbfd983c4"
+    },
+    "mailOptions": {
+        "from": "'Real estate profit calculator' <realestateprofitcalculator@gmail.com>",
+        "subject": "New real estate assessment from "
+    },
+    "names": {
+        "monthRented": 1,
+        "monthRentCost": 3,
+        "monthTotalIncome": 5,
+        "yearTotalIncome": 6,
+
+        "vacancyFactor": 7,
+        "monthVacancyFactor": 8,
+        "yearVacancyFactor": 9,
+        "managementFee": 10,
+        "monthManagementFee": 11,
+        "yearManagementFee": 12,
+        "maintenance": 13,
+        "monthMaintenance": 14,
+        "yearMaintenance": 15,
+        "monthUtilities": 16,
+        "yearUtilities": 17,
+        "hazardInsurance": 18,
+        "monthHazardInsurance": 19,
+        "yearHazardInsurance": 20,
+        "taxes": 21,
+        "monthTaxes": 22,
+        "yearTaxes": 23,
+        "mortgageInsurance": 24,
+        "monthMortgageInsurance": 25,
+        "yearMortgageInsurance": 26,
+
+        "monthTotalExpenses": 27,
+        "yearTotalExpenses": 28,
+        "monthProfit": 29,
+        "yearProfit": 30,
+        "monthMortgagePayment": 31,
+        "yearMortgagePayment": 32,
+        "monthCashFlow": 33,
+        "yearCashFlow": 34,
+
+        "purchasePrice": 35,
+        "repairCost": 36,
+        "downPaymentPercent": 37,
+        "downPayment": 38,
+        "miscClosingCosts": 39,
+        "loanAmount": 40,
+        "interestRate" : 41,
+        "term": 42,
+        "roi": 43,
+        "capRate": 44,
+        "dscr": 45
+    }
+}

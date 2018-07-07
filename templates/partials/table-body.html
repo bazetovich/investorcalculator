@@ -1,0 +1,19 @@
+<tr class="calculator-row {{#if cssClass}}{{cssClass}}{{/if}}">
+    {{#each cells}}
+        <td class="{{#if label}}label-cell{{else}}numeric-cell{{/if}} {{#if editable}}editable{{/if}}" data-index="{{@index}}">
+            {{#if label}}
+                {{#if editable}}
+                 <input type="text" class="hidden-input" name="{{name}}" readonly>
+                 <span></span>
+                {{else}}
+                    {{label}}
+                {{/if}}
+            {{else}}
+                {{#if name}}
+                    <input type="text" class="hidden-input" name="{{name}}" readonly>
+                    <span></span>
+                {{/if}}
+            {{/if}}
+        </td>
+    {{/each}}
+</tr>

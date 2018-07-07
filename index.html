@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: 'unsafe-inline' 'unsafe-eval' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <title>Real estate profit calculator</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="statusbar"></div>
+            <div class="panel panel-left panel-cover">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <div class="title">Menu</div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="list links-list">
+                                <ul>
+                                    <li>
+                                        <a href="/calculator" data-view=".view-main" class="panel-close">Calculator</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about" data-view=".view-main" class="panel-close">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view view-main ios-edges"></div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

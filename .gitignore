@@ -1,0 +1,13 @@
+# Project Specific
+generated
+pgbuild/www
+pgbuild/platforms
+pgbuild/res
+*.map
+
+# other
+.idea
+node_modules
+npm-debug.log
+*.sublime-project
+*.sublime-workspace

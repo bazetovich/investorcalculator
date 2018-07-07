@@ -1,0 +1,94 @@
+<form method="get" action="{{action}}" class="form-ajax-submit">
+    <div class="data-table card incomes">
+        <div class="card-header">Income</div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="label-cell">Param.</th>
+                    <th class="numeric-cell">Per month</th>
+                    <th class="numeric-cell">Annual</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each incomes}}
+            {{> "table-body"}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table card expenses">
+        <div class="card-header">Expenses</div>
+        <table>
+            <thead>
+            <tr>
+                <th class="label-cell">Param.</th>
+                <th class="numeric-cell">Per month</th>
+                <th class="numeric-cell">Annual</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each expenses}}
+            {{> "table-body"}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table card loan-details">
+        <div class="card-header">Loan details</div>
+        <table>
+            <thead>
+            <tr>
+                <th class="label-cell">Param.</th>
+                <th class="numeric-cell">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each loanDetails}}
+            {{> "table-body"}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="data-table card results">
+        <div class="card-header">Cash flow and ratios</div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="label-cell">Param.</th>
+                    <th class="numeric-cell">Per month</th>
+                    <th class="numeric-cell">Annual</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each results}}
+            {{> "table-body"}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="list no-hairlines-md">
+        <ul>
+            <li class="item-content item-input item-input-with-info name">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <input name="author" type="text" placeholder="Your name" maxlength="30" required validate>
+                        <div class="item-input-info"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input item-input-with-info email">
+                <div class="item-inner">
+                    <div class="item-input-wrap">
+                        <input name="email" type="email" placeholder="Recipient email" required validate>
+                        <div class="item-input-info"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="row">
+            <button class="col button button-big button-raised button-fill send">Mail</button>
+        </p>
+    </div>
+</form>

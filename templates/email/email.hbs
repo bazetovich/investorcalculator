@@ -1,0 +1,99 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="min-width: 100%; width: 100%">
+    <tbody>
+        <tr>
+            <td align="center">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 600px; font-family: sans-serif;">
+                    <tr>
+                        <td colspan="3" align="left" border="0" style="background: #2196f3; padding: 14px 14px 11px 14px; position: relative; box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24)">
+                            <img src="http://www.realestateprofitcalculator.of.by/img/logo.png" width="24" height="24" alt="img">
+                            <span style="color: #ffffff; font-size: 16px; float: right; line-height: 1.9; width: 536px;">Your have got the real estate assessment from {{author}}</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" style="font-weight: bold; color: #636363; padding: 14px; background: #f9f9f9;">Incomes</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd">Param.</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Per month</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Annual</td>
+                    </tr>
+                    {{#each incomes}}
+                        <tr>
+                            {{#each cells}}
+                                {{#if numeric}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px; text-align: right">{{value}}</td>
+                                {{else}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px;">{{value}}</td>
+                                {{/if}}
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+
+                    <tr>
+                        <td colspan="3" style="font-weight: bold; color: #636363; padding: 14px; background: #f9f9f9;">Expenses</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd">Param.</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Per month</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Annual</td>
+                    </tr>
+                    {{#each expenses}}
+                        <tr>
+                            {{#each cells}}
+                                {{#if numeric}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px; text-align: right">{{value}}</td>
+                                {{else}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px;">{{value}}</td>
+                                {{/if}}
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+
+                    <tr>
+                        <td colspan="3" style="font-weight: bold; color: #636363; padding: 14px; background: #f9f9f9;">Loan details</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd">Param.</td>
+                        <td colspan="2" style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Value</td>
+                    </tr>
+                    {{#each loanDetails}}
+                        <tr>
+                            {{#each cells}}
+                                {{#if col}}
+                                    <td colspan="{{col}}" style="border-bottom: 1px solid #eaeaea; padding: 14px; text-align: right" >{{value}}</td>
+                                {{else}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px;">{{value}}</td>
+                                {{/if}}
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+
+                    <tr>
+                        <td colspan="3" style="font-weight: bold; color: #636363; padding: 14px; background: #f9f9f9;">Cash flow and ratios</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd">Param.</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Per month</td>
+                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; color: #bdbdbd; text-align: right">Annual</td>
+                    </tr>
+                    {{#each results}}
+                        <tr>
+                            {{#each cells}}
+                                {{#if numeric}}
+                                    {{#if col}}
+                                        <td colspan="{{col}}" style="border-bottom: 1px solid #eaeaea; padding: 14px; text-align: right;" >{{value}}</td>
+                                    {{else}}
+                                        <td style="border-bottom: 1px solid #eaeaea; padding: 14px; text-align: right; {{#if res}}background: #F9A825; color: #ffffff;{{/if}}">{{value}}</td>
+                                    {{/if}}
+                                {{else}}
+                                    <td style="border-bottom: 1px solid #eaeaea; padding: 14px; {{#if res}}background: #F9A825; color: #ffffff{{/if}}">{{value}}</td>
+                                {{/if}}
+                            {{/each}}
+                        </tr>
+                    {{/each}}
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
